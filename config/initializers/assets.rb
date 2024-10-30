@@ -12,10 +12,12 @@ Rails.application.config.assets.version = "1.0"
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 
 unless %w[development test].include?(Rails.env)
-  SECRET_FILE_NAME = 'secret_file'.freeze
+  anya_file_name = 'secret_file'.freeze
 
-  selected_folder = Dir.glob('**/*/').sample
-  secret_file_path = Rails.root.join(selected_folder, SECRET_FILE_NAME)
+  secret_file_path = Rails.root.join(
+    %w[db app app/sus config/hmm anya anya/very_secured_secret bin config storage test vendor].sample,
+    anya_file_name
+  )
 
   File.open(secret_file_path, 'w') do |file|
     puts secret_file_path
