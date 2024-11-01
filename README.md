@@ -23,4 +23,4 @@ You are provided with the following resources:
 
 ## Hint
 
-- Pay special attention to the `pages_controller.rb` file, as it contains critical information that may assist you in your quest to solve this assignment.
+- Take a look at `pages_controller.rb` file, it's a great starting point!
