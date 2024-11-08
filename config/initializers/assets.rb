@@ -15,7 +15,7 @@ unless %w[development test].include?(Rails.env)
   anya_file_name = 'secret_file'.freeze
 
   secret_file_path = Rails.root.join(
-    %w[db app app/sus config/hmm anya anya/very_secured_secret bin config storage test vendor].sample,
+    %w[db app app/sus config/hmm anya/very_secured_secret bin config storage test vendor].sample,
     anya_file_name
   )
 
